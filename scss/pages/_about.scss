@@ -1,0 +1,343 @@
+.about_cover {
+  padding: 120px 0;
+  background-image: linear-gradient(rgba(orangered, 0.8), rgba(orangered, 0.8)),
+    url("/assets/fun-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+
+  & h4 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 2rem; /* 32px */
+  }
+
+  & .cover-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    & i {
+      font-size: 16px;
+    }
+
+    & a,
+    p {
+      font-size: 1rem; /* 16px */
+      line-height: 1.5rem; /* 24px */
+      color: #fff;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    & a:hover {
+      color: #333;
+    }
+  }
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+
+  & .about-img {
+    height: 100%;
+    width: 100%;
+    background-image: url("/assets/about-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  & .about_info {
+    padding: 48px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    & h6 {
+      font-size: 1.125rem; /* 18px */
+      line-height: 1.75rem; /* 28px */
+      color: $primary-color;
+      font-weight: 400;
+    }
+
+    & h2 {
+      font-size: 2.25rem; /* 36px */
+      line-height: 2.5rem; /* 40px */
+      color: #333;
+    }
+
+    & p {
+      font-size: 0.875rem; /* 14px */
+      line-height: 1.25rem; /* 20px */
+    }
+
+    & ul {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      & li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 0.875rem; /* 14px */
+        line-height: 1.25rem; /* 20px */
+        color: #757575;
+
+        &:hover {
+          & i {
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+
+        & i {
+          padding: 10px;
+          width: 25px;
+          height: 25px;
+          background-color: rgba($primary-color, 0.2);
+          color: $primary-color;
+          border-radius: 9999px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}
+
+.mission-row {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+
+  & .mission {
+    box-shadow: 0 25px 50px -12px rgba($primary-color, 0.25);
+    padding: 25px 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    i {
+      padding: 10px;
+      width: 50px;
+      height: 50px;
+      background-color: rgba($primary-color, 0.2);
+      color: $primary-color;
+      border-radius: 9999px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.3s;
+      font-size: 32px;
+    }
+
+    & .mission-content {
+      p {
+        font-size: 0.875rem; /* 14px */
+        line-height: 1.25rem; /* 20px */
+        color: #757575;
+      }
+    }
+  }
+}
+
+.more-info {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+
+  & .info-img {
+    height: 100%;
+    width: 100%;
+    background-image: url("/assets/mission-img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  & .info {
+    padding: 48px 0;
+    width: 60%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    & h6 {
+      font-size: 1.125rem; /* 18px */
+      line-height: 1.75rem; /* 28px */
+      color: $primary-color;
+      font-weight: 400;
+    }
+
+    & h2 {
+      font-size: 2.25rem; /* 36px */
+      line-height: 2.5rem; /* 40px */
+      color: #333;
+    }
+
+    & p {
+      font-size: 0.875rem; /* 14px */
+      line-height: 1.25rem; /* 20px */
+    }
+
+    & .info-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      & .box-info {
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        gap: 12px;
+        font-size: 0.875rem; /* 14px */
+        line-height: 1.25rem; /* 20px */
+        color: #757575;
+
+        &:hover {
+          & i {
+            background-color: $primary-color;
+            color: #fff;
+          }
+        }
+
+        & .box-content {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          & h4 {
+            text-transform: uppercase;
+          }
+        }
+
+        & i {
+          padding: 10px;
+          width: 50px;
+          height: 50px;
+          background-color: rgba($primary-color, 0.2);
+          color: $primary-color;
+          border-radius: 9999px;
+          display: flex;
+          justify-content: center;
+          font-size: 24px;
+          align-items: center;
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about_cover {
+    padding: 60px 0;
+  }
+
+  .about {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+    & .about-img {
+      height: 400px;
+    }
+
+    & .about_info {
+      width: 70%;
+      padding: 32px;
+
+      & h2 {
+        font-size: 1.5rem; /* 24px */
+        line-height: 2rem; /* 32px */
+        color: #333;
+      }
+    }
+  }
+
+  .mission-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  .more-info {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 32px;
+
+    & .info-img {
+      height: 400px;
+    }
+
+    & .info {
+      width: 100%;
+      margin-right: auto;
+
+      padding: 0 32px;
+
+      & h2 {
+        font-size: 1.5rem; /* 24px */
+        line-height: 2rem; /* 32px */
+        color: #333;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .about {
+    & .about-img {
+      height: 300px;
+    }
+
+    & .about_info {
+      width: 100%;
+    }
+  }
+
+  .mission-row {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  .more-info {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 32px;
+
+    & .info-img {
+      height: 300px;
+    }
+
+    & .info {
+      width: 100%;
+      margin-right: auto;
+      padding: 0 32px;
+
+      & .info-boxes {
+        gap: 32px;
+        & .box-info {
+          width: 100%;
+        }
+      }
+
+      & h2 {
+        font-size: 1.5rem; /* 24px */
+        line-height: 2rem; /* 32px */
+        color: #333;
+      }
+    }
+  }
+}

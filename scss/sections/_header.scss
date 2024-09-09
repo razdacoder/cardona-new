@@ -1,0 +1,103 @@
+header {
+  & .mobile-nav {
+    display: none;
+  }
+  & .top-banner {
+    border-bottom: 1px solid #eee;
+  }
+
+  & .banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    & .banner__links {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      a {
+        font-size: 14px;
+        font-weight: 500;
+        color: #333;
+        text-decoration: none;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    & .banner__info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      & .info {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        & .banner-icon {
+          color: $primary-color;
+        }
+        & span {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  & .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    padding: 8px 0;
+
+    & nav {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+      a {
+        color: #333;
+        text-decoration: none;
+        padding: 20px 12px;
+        font-size: 15px;
+        font-weight: 500;
+        transition: color 0.3s;
+
+        &.active,
+        &:hover {
+          color: $primary-color;
+          border-bottom: 3px solid $primary-color;
+          border-top-left-radius: 4px;
+        }
+      }
+    }
+
+    & button {
+      padding: 14px 24px;
+      background-color: $primary-color;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 15px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    & .hamburger {
+      display: none;
+      & ion-icon {
+        font-size: 32px;
+        color: $primary-color;
+      }
+    }
+  }
+}

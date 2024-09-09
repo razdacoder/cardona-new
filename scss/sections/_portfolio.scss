@@ -1,0 +1,52 @@
+.portfolio {
+  & .portfolio-row {
+    width: 100%;
+    margin: 0 auto;
+
+    & .single-pf {
+      position: relative;
+      padding: 0 12px;
+
+      & img {
+        width: 100%;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background: $primary-color;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        z-index: 1;
+      }
+
+      & .btn {
+        color: $primary-color;
+        z-index: 3;
+        background: #fff;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        border-radius: 0px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.4s ease;
+        height: 48px;
+        width: 150px;
+        text-align: center;
+        line-height: 48px;
+        padding: 0;
+        font-weight: 500;
+        font-size: 14px;
+        margin-left: -75px;
+        margin-top: -24px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

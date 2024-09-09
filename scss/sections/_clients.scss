@@ -1,0 +1,79 @@
+.clients {
+  background-image: linear-gradient(
+      rgba($primary-color, 0.8),
+      rgba($primary-color, 0.8)
+    ),
+    url("/assets/client-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0px;
+  position: relative;
+
+  // &.overlay::before {
+  //   position: absolute;
+  //   content: "";
+  //   left: 0;
+  //   top: 0;
+  //   height: 100%;
+  //   width: 100%;
+  //   background: $primary-color;
+  //   opacity: 0.8;
+  // }
+
+  & .clients-row {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+
+    & .single-clients {
+      img {
+        width: 100%;
+        cursor: pointer;
+        text-align: center;
+        float: none;
+        padding: 0 35px;
+      }
+    }
+  }
+}
+
+.call-to-action.content {
+  text-align: center;
+  padding: 100px 265px;
+  color: #fff;
+
+  & h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 46px;
+  }
+
+  & p {
+    color: #fff;
+    margin: 30px 0px;
+    font-size: 15px;
+  }
+
+  & .btn {
+    background: #fff;
+    margin-right: 20px;
+    font-weight: 500;
+    border: 1px solid #fff;
+    color: orangered;
+
+    &::before {
+      background: $primary-color;
+    }
+
+    &.second {
+      border: 1px solid #fff;
+      color: #fff;
+      background: transparent;
+      color: #fff !important;
+
+      & i {
+        margin-left: 10px;
+      }
+    }
+  }
+}

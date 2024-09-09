@@ -1,0 +1,50 @@
+.how-section {
+  margin-bottom: 30px;
+  & .features {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    & .single-features {
+      text-align: center;
+      position: relative;
+      padding: 10px 20px;
+
+      i {
+        font-size: 45px;
+        color: $primary-color;
+        position: absolute;
+        left: 50%;
+        margin-left: -50px;
+        top: 0;
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
+        text-align: center;
+        border: 1px solid #dddddd;
+        border-radius: 100%;
+        transition: all 0.4s ease;
+
+        &:hover {
+          color: #fff;
+          background-color: $primary-color;
+        }
+      }
+
+      // & .single-icon {
+      //   & i {
+      //   }
+      // }
+
+      h3 {
+        padding-top: 128px;
+        color: #333;
+        font-weight: 600;
+        font-size: 21px;
+      }
+
+      p {
+        margin-top: 20px;
+      }
+    }
+  }
+}
